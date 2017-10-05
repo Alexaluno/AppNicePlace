@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppNicePlaceV6._Views.LoginView"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Nice Place" FontSize="Large" ></Label>
+            <Label Text="Um lugar bacana para" FontSize="Small"></Label>
+            <Label Text="curtir!" FontSize="Small"></Label>
+            <Entry Text="{Binding Email}" Keyboard="Email" Placeholder="email@server.com"></Entry>
+            <Entry IsPassword="true" Text="{Binding Password}" Placeholder="password"></Entry>
+            
+            <Button Text="Login" Command="{Binding LoginCommand}"></Button>
+            <Button Text="Register" Command="{Binding RegisterCommand}"></Button>            
+            <Button Text="Login FaceBook" Command="" BackgroundColor="Blue"></Button>
+        </StackLayout>
+    </ContentPage.Content>      
+</ContentPage>
