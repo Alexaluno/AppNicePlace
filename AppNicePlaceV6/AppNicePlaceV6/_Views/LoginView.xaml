@@ -5,15 +5,17 @@
              >
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <Label Text="Nice Place" FontSize="Large" ></Label>
-            <Label Text="Um lugar bacana para" FontSize="Small"></Label>
-            <Label Text="curtir!" FontSize="Small"></Label>
+            <Label Text="Nice Place" FontSize="Large" HorizontalTextAlignment="Center"></Label>
+            <Label Text="Um lugar bacana para curtir!" FontSize="Small" HorizontalTextAlignment="Center"></Label>
+            
             <Entry Text="{Binding Email}" Keyboard="Email" Placeholder="email@server.com"></Entry>
-            <Entry IsPassword="true" Text="{Binding Password}" Placeholder="password"></Entry>
+            <Entry IsPassword="true" Text="{Binding Password}" Placeholder="Senha
+                   "></Entry>
             
             <Button Text="Login" Command="{Binding LoginCommand}"></Button>
-            <Button Text="Register" Command="{Binding RegisterCommand}"></Button>            
+            <Button Text="Cadastre-se aqui" Command="{Binding RegisterCommand}"></Button>            
             <Button Text="Login FaceBook" Command="" BackgroundColor="Blue"></Button>
         </StackLayout>
+        
     </ContentPage.Content>      
 </ContentPage>
